@@ -1,0 +1,133 @@
+
+@use 'variables' as *;
+@use 'mixing' as *;
+.advancedSection{
+}
+
+.advancedBlock{
+    .advancedHeader{
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        h3{
+            color: $black;
+        }
+        p{
+            color: $pColor;
+        }
+    }
+}
+.advancedTabBlock{
+    padding: 32px;
+    border: 1px solid $borderColor;
+    border-radius: 20px;
+    background-color: #fff;
+    .tabMenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 32px;
+        .tabItem{ 
+            list-style: none; 
+            display: flex;
+            gap: 20px;
+            align-items: center; 
+            position: relative;                 
+            &::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: $grayLight;
+                
+            }
+            li{
+                font-family: $inter;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $black;
+                box-shadow: 0 0 2px 0  #000;
+                border-radius: 32px;
+                cursor: pointer;
+                padding: 8px 16px;
+                position: relative;
+                z-index: 90;
+                background-color: #fff;
+                min-width: 133px;
+                text-align: center;
+                transition: all 0.3s ease-in-out;
+                span{
+                    font-weight: 500;
+                }
+                // &::after{
+                //     content: '';
+                //     position: absolute;
+                //     top: 50%;
+                //     transform: translateY(-50%);
+                //     left: 50px;
+                //     width: 100%;
+                //     height: 1px;
+                //     background: $grayLight;
+                //     z-index: -90;
+                // }
+                // &:last-child{
+                //     &::after{
+                //         display: none;
+                //     }
+                // }
+                &.active{
+                    background-color: $primary;
+                    color: #fff;
+                    box-shadow: none;
+                }
+                &:not(.active):hover{
+                    background-color: $primary;
+                    color: #fff;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .tabActivPane{
+        .tabContent{
+            display: flex;
+            align-items: center;
+            gap: 56px;
+        }
+        .tabTextPane{
+            flex: 0 1 50%;
+            h4{
+                margin-bottom: 16px;
+            }
+            p{
+                color: $pColor;
+            }
+            .heroList{
+                margin-top: 16px;
+                li{
+                    margin-bottom: 12px;
+                    color: $black;
+                }
+            }
+        }
+        .tabImagePan{            
+            flex: 0 1 50%;
+            .slider{
+                max-height: 315px;
+                .sliderImgs{
+                    img{
+                        height: 315px;
+                    }
+                }
+            }
+        }
+        &.active{
+            display: block;
+        }
+    }
+}

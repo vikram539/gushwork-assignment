@@ -1,0 +1,93 @@
+ @use 'variables' as *;
+ @use 'mixing' as *;
+ footer{
+    .footerLogo{
+        max-width: 109px;
+        // height: 40px;
+    }
+    .emailBlock{
+        background-color: #fff;
+    }
+    .emailForm{
+        h4{
+            font-family: $inter;
+            font-weight: 600;
+            font-size: 24px;
+        }
+    }
+    .footerBlock{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        .footerMenu{
+            h6{
+                font-size: 12px;
+                color: $black;
+                margin-bottom: 16px;
+                font-family: $inter;
+            }
+            ul{
+                list-style: none;
+                // margin: 0;
+                padding: 0;
+                li{
+                    margin-bottom: 16px;
+                    a{
+                        color: $pColor;
+                        text-decoration: none;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    &:hover{
+                        a{
+                            color: $primary;
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .contact{
+            li{
+                a{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 6px;
+                    span{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .socialMedia{
+            margin-top: 24px;
+            a{
+                margin-right: 12px;
+            }
+        }
+    }
+    .copyRight{
+        padding: 12px;
+        border-top: 1px solid $borderColor;
+        .container{
+            align-items: center;
+            justify-content: space-between;
+        }
+        p, a{
+            font-size: 12px;
+            color: $pColor;
+            text-decoration: none;
+        }
+        a{
+            &:hover{
+                color: $primary;
+            }
+        }
+        .policy{
+            display: flex;
+            gap: 16px;
+        }
+    }
+ }

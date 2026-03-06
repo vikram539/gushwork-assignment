@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+*::first-letter{
+    text-transform: uppercase;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: $inter;
+    color: $black;  
+    background: #ffffff url('../images/bg.png') center top; 
+    background-blend-mode: hard-light;  
+    line-height: 20px;
+    letter-spacing: -0.6%;
+}
+.border{
+    border: 1px solid red;
+}
+main{
+    width: 100%;
+    // padding: 32px 100px;
+    box-sizing: border-box;   
+    box-shadow: -3px -1px 0px 1px #ebebeb;
+}
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto; /* Center align */
+}
+
+// header
+header{
+    background-color: #ffffff;
+}

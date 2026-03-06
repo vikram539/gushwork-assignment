@@ -1,0 +1,150 @@
+@use 'variables' as *;
+.buttons{
+    display: flex;
+    // justify-content: center;
+    align-items: center; 
+    gap: 12px;  
+    a.btn{
+        opacity: 1;
+        border-radius: 10px;
+        padding-top: 14px;
+        padding-right: 16px;
+        padding-bottom: 14px;
+        padding-left: 16px;
+        background-color: $primary;
+        color: #fff !important;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+        &:hover{
+            background-color: #3746a5;
+        }
+        &:nth-child(2){
+           background-color: transparent;
+           color: $black !important;
+           border: 1px solid $primary;
+           &:hover{
+            color: $primary;
+           }
+        }
+        & :is(img){
+            margin-right: 5px;
+        }
+    }
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+// grids
+.grid-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-col{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.grid-col-equal{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: auto;
+}
+.grid-col-3{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.d-flex{
+    display: flex;
+}
+.justifiy-center{
+    justify-content: center;
+}
+.d-table{
+    display: table;
+}
+.m-auto{
+    margin: 0 auto;
+}
+.gap-16{
+    gap: 16px;  }
+// heading
+h1,h2,h3,h4,h5,h6{
+    font-family: $urbanist;
+}
+h1{    
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+h3{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+    span{
+        color: $primary;
+    }
+}
+h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0px;
+    span{
+        color: $primary;
+    }
+}
+h5{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    max-width: 800px;
+}
+
+//padding
+.pt-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+
+//margin
+.mt-100{
+    margin-top: 100px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.mt-56{
+    margin-top: 56px;
+}
+.mb-56{
+    margin-bottom: 56px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.overflowHide{
+    overflow: hidden;
+}

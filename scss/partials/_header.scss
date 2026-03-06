@@ -1,0 +1,53 @@
+@use 'variables' as *;
+.header-outlet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    height: 80px;
+    .logo{
+        img{
+            max-width: 109px;
+        }
+    }
+    .menu{
+        ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            li{
+                margin: 0 20px;
+                font-size: 14px;
+                letter-spacing: -0.6%;
+                line-height: 20px;
+                a{
+                    text-decoration: none;
+                    color: $black;
+                    font-family: $inter;
+                    font-weight: 400;
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+#siteHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+#siteHeader.active {
+    transform: translateY(0);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+// body {
+//     padding-top: 100px; /* adjust to your header height */
+// }

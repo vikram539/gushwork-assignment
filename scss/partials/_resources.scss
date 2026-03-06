@@ -1,0 +1,38 @@
+@use 'variables' as *;
+@use 'mixing' as *;
+.resourceSection{
+    .resourceBlock{
+        .cards{
+            width: 100% !important;
+            .cardhead{
+                ul{
+                    list-style: none;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 16px;
+                        justify-content: space-between;
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                        .download{
+                            display: flex;
+                            align-items: center;
+                            img{
+                                margin-bottom: 0px !important;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: $primary;
+                                margin-left: 8px;
+                                &:hover{
+                                    color: $borderColor;    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

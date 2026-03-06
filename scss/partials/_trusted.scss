@@ -1,0 +1,48 @@
+@use 'variables' as *;
+@use 'mixing' as *;
+.trustedSection{    
+    .grid-col-equal{
+        height: auto !important;
+    }
+    .versatileImages{
+        margin-bottom: 0 !important;
+    }
+ .versatileCaption{
+    position: relative !important;
+    color: $black !important;
+    height: 100%;
+    padding: inherit !important;
+    &::after{
+       display: none;
+    }
+    .cards{
+        background: $trustedCardBg;
+        padding: 32px;
+        width: 420px !important;
+        gap: inherit !important;
+        .cardhead{
+            img{
+                margin-bottom: 32px;
+            }
+            h4{
+                font-size: 24px;
+            }
+        } 
+        .cardBody{
+            margin-top: 16px;
+        }       
+        p{
+            color: $pColor;
+            font-size: 16px;
+        }
+        .cardFooter{
+            h6{
+                font-size: 16px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+ }   
+}

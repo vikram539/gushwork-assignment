@@ -1,0 +1,21 @@
+@use 'variables' as *;
+.badges{
+    ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        li{
+            color: $grayLight;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            span{
+                color: $black;
+            }
+            a{
+                color: $grayLight;
+                text-decoration: none;
+            }
+        }
+    }
+}

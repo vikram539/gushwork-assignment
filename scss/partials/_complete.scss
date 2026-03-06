@@ -1,0 +1,55 @@
+@use 'variables' as *;
+@use 'mixing' as *;
+.completedSection{
+    .cards{
+        padding: 24px !important;  
+        .cardhead{
+            h4{
+                font-size: 28px;
+            }
+        }
+        .cardBody{           
+            p{
+                font-size: 16px;
+                color: $pColor ;
+            }
+        }
+        .cardFooter{
+            flex-flow: column;
+            margin-top: 38px !important;
+           img{
+            border-radius: 16px;
+            height: 174px;
+            width: 100%;
+            object-fit: cover;
+           }
+           a{
+            margin-top: 8px;
+            padding: 10px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background-color: #2B39900D;
+            color: $primary;
+            border-radius: 12px;
+            font-size: 16px;
+            &:hover{
+                background-color: $primary;
+                color: #fff;
+            }
+           }
+        }
+    }
+    .emailBlock{
+        grid-template-columns: 1fr 187px;
+        form{
+            button{
+                height: 44px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+            }
+        }
+    }
+}

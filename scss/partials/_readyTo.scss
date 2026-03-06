@@ -1,0 +1,51 @@
+@use 'variables' as *;
+@use 'mixing' as *;
+.readyToBlock{
+    background-color: $primary;
+    border-radius: 12px;
+    padding: 56px;
+    .emailBlock{
+        background-color: transparent;
+        padding: 0px;
+        border: none;
+        box-shadow: none;
+        gap: 64px;
+        grid-template-columns: 1fr 420px;
+        .emailText{
+            h2{
+                color: #fff;
+                margin-bottom: 16px;
+            }
+            p{
+                color: $borderColor;
+                margin-bottom: 40px;
+                font-size: 18px;
+                // &:nth-child(2){
+                //     font-size: 14px;
+                // }
+                &:last-child{
+                    margin-bottom: 0px;
+                    font-size: 14px;
+                }
+            }
+            hr{
+                border-color: $borderColor;
+                margin-bottom: 12px;
+            }
+        }
+        .emailForm{
+            background-color: #F7F8F9;
+            padding: 32px;
+            border-radius: 24px;
+            h4{
+                font-family: $inter;
+                color: $black;
+                margin-bottom: 16px;
+                font-size: 16px;
+            }
+        }
+        button{
+            background-color: #262A2E;
+        }
+    }
+}

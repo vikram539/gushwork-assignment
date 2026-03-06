@@ -1,0 +1,115 @@
+@use 'variables' as *;
+.mainContent{
+    .certified{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            display: flex;
+            align-items: center;
+            margin-right: 12px;
+            border: 1px solid #E1E3E8;
+            padding: 8px 9.6px;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: #fff;
+            span{
+                color: #4B5563;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            img{
+                margin-right: 8px;
+            }
+        }
+    }
+    
+    .buttons{
+        margin-top: 24px !important;
+    }
+}
+.heroText{
+    margin-block: 16px;
+}
+.heroList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li{
+        font-weight: 400;
+        line-height: 24px;
+        font-size: 16px;
+        margin-bottom: 16px;
+        img{
+            margin-right: 8px;
+        }
+    }
+}
+.priceRange{
+    width: 100%;
+    min-height: 136px;
+    border-radius: 10px;
+    padding-block: 16px;
+    padding-inline: 20px;
+    border: 1px solid #CFD1D4;
+    background-color: #fff;
+    margin-top: 40px;
+    font-family: $inter;
+    display: flex;
+    flex-flow: column;
+    h4{
+        font-size: 14px;
+        line-height: 20px; 
+        font-weight: 500;
+        color: #6A7077;
+        margin-bottom: 8px;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 140%;
+        font-weight: 600;
+        color: #0D0D0D;
+        span{
+            
+        }
+    }
+    .shipping{
+        margin-top: 16px;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 8px;
+            li{
+                font-weight: 400;
+                line-height: 24px;
+                font-size: 14px;
+                // margin-bottom: 16px;
+                flex: 0 1 auto;
+                border-radius: 6px;
+                padding-block: 6px;
+                padding-inline: 12px;
+                background-color: #FEF3C7;
+                color: #92400E;
+            }
+        }
+    }
+    .isoCertified{
+        border-radius: 6px;
+        padding-block: 6px;
+        padding-inline: 12px;
+        background-color: #F3F4F6;
+        margin-top: 16px;
+        width: fit-content;
+        display: none;
+        span{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
